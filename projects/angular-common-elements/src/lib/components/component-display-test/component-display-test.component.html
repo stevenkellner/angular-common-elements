@@ -1,0 +1,11 @@
+<p-card class="fixed right-0 bottom-0 pb-2 pr-2" styleClass="bg-primary">
+    <ng-template #title>{{ description() }}</ng-template>
+    <ng-template #footer>
+        <div class="flex gap-4 mt-1">
+            <p-button label="Success" (click)="successClicked()" [outlined]="true" class="w-full" styleClass="w-full" />
+            <p-button label="Failure" (click)="failureClicked()" severity="secondary" [outlined]="true" class="w-full" styleClass="w-full" />
+        </div>
+    </ng-template>
+</p-card>
+
+<ng-content />
